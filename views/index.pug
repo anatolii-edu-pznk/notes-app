@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1.mb-4 Notes
+  a(href="/notes/new" class="btn btn-primary mb-3") Add New Note
+  ul.list-group
+    each note in notes
+      li.list-group-item
+        a(href=`/notes/${note._id}`)= note.title

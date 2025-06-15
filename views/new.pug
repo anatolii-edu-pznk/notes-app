@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1.mb-4 Add New Note
+  form(action="/notes" method="POST")
+    .mb-3
+      label.form-label(for="title") Title:
+      input.form-control(type="text" name="title" required)
+    .mb-3
+      label.form-label(for="content") Content:
+      textarea.form-control(name="content")
+    button.btn.btn-success(type="submit") Add Note

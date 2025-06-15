@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1.mb-3= note.title
+  p= note.content
+  small.text-muted Created at: #{note.createdAt.toLocaleString()}
+  br
+  a(href="/" class="btn btn-secondary mt-3") Back to Notes

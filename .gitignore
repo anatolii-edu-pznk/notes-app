@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+logs
+*.log
+
+# Dependency lock file (optional — many prefer to keep it)
+# Uncomment the next line *only* if you want to ignore it
+# package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor-specific
+.vscode/
+.idea/
+
+# Build directories (optional, if you ever use them)
+dist/
+build/
